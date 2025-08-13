@@ -1,0 +1,80 @@
+/* Style for the tagline section */
+#tagline {
+    font-family: Arial, sans-serif; /* Sets font */
+    font-style: italic;              /* Makes text italic */
+    font-size: 14px;                 /* Sets text size */
+    color: grey;                     /* Text color */
+}
+
+/* Style for profile image */
+#img img {
+    width: 150px;             /* Image width */
+    height: 150px;            /* Image height */
+    border-radius: 50%;       /* Makes image circular */
+    object-fit: cover;        /* Ensures image covers the box without distortion */
+    display: block;           /* Treat image as block element */
+    margin: 0 auto;           /* Centers image horizontally */
+}
+
+/* Center text in header h1, paragraphs, and footer */
+header h1, p, footer {
+    text-align: center;
+}
+
+/* General body styles */
+body {
+    background-color: #FFB3C6;    /* Background color */
+    margin: 0;                     /* Removes default margin */
+    height: 100vh;                 /* Full viewport height */
+    justify-content: center;       /* Center content vertically (if using flex) */
+    align-items: center;           /* Center content horizontally (if using flex) */
+}
+
+/* Style for the bio box fieldset */
+#bio-box {
+    border: 2px solid #FFB6C1;    /* Pink border */
+    border: 2px solid grey;        /* Overrides border color to grey */
+    border-radius: 10px;           /* Rounded corners */
+    padding: 20px;                 /* Inner spacing */
+    background-color: #FFEEF2;     /* Background color */
+    max-width: 600px;              /* Maximum width */
+    margin: 30px auto;             /* Centers fieldset with margin */
+    font-family: Arial, sans-serif;/* Font for text inside */
+    color: #333;                   /* Text color */
+}
+
+/* Style for the legend inside bio box */
+#bio-box legend {
+    font-weight: bold;             /* Bold text */
+    font-size: 1.2em;              /* Slightly larger text */
+    padding: 0 10px;               /* Padding on left and right */
+    color: #d63384;                /* Text color */
+    background-color: #FFEEF2;     /* Matches bio box background */
+    border-radius: 5px;            /* Rounded corners */
+}
+
+/* Style for hobbies heading */
+.hobbies {
+    color: #d63384;                /* Pink color for hobbies text */
+}
+
+/* Responsive design for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+    #bio-box {
+        padding: 10px;             /* Smaller padding */
+        margin: 15px;              /* Smaller margin */
+    }
+    #img img {
+        width: 100px;              /* Smaller image width */
+        height: 100px;             /* Smaller image height */
+    }
+    body {
+        font-size: 14px;           /* Smaller font for better fit */
+    }
+}
+
+/* General HTML styles */
+html {
+    height: 100%;                  /* Full height */
+    margin: 0;                      /* Removes default margin */
+}
